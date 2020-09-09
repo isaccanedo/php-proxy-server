@@ -1,12 +1,11 @@
 # PHP Proxy Server
 
-Sometimes we need to create a proxy server because we are limited by something that causes us to not be able to access a website address directly from a machine. This proxy server will forward all requests received to the destination server.
+Às vezes, precisamos criar um servidor proxy porque somos limitados por algo que nos impede de acessar o endereço de um site diretamente de uma máquina. Este servidor proxy encaminhará todas as solicitações recebidas para o servidor de destino.
 
-As an example:
-The web server that you are heading to uses port 94 while your application uses shared hosting and cannot access port 94 using cURL because of the settings made by the hosting provider.
+Por exemplo: O servidor da web para o qual você está indo usa a porta 94 enquanto seu aplicativo usa hospedagem compartilhada e não pode acessar a porta 94 usando cURL devido às configurações feitas pelo provedor de hospedagem.
 
-You require a proxy server to allow access from your application to port 94 via port 80.
+Você precisa de um servidor proxy para permitir o acesso de seu aplicativo à porta 94 através da porta 80.
 
-All you have to do is create a proxy server that guarantees access to port 94. This proxy server will receive a request from your application and then forward the request to port 94.
+Tudo o que você precisa fazer é criar um servidor proxy que garanta acesso à porta 94. Este servidor proxy receberá uma solicitação de seu aplicativo e, em seguida, encaminhará a solicitação para a porta 94.
 
-You need to allow override document root direcyory on *httpd.conf*
+Você precisa permitir a substituição do diretório raiz do documento em `httpd.conf`
